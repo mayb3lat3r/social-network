@@ -1,0 +1,91 @@
+.profile_manage_social_information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 19px;
+  }
+  
+  .manage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.21);
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.21);
+    border-radius: 10px;
+    background-color: #2b7bff;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 55px;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  
+  .manage:hover {
+    background-color: #0048a7;
+  }
+  
+  .social_information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 614px;
+    height: 63px;
+    -webkit-box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.21);
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.21);
+    border-radius: 10px;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  
+  .social_information__item {
+    margin-right: 32px;
+    border-radius: 10px;
+  }
+  
+  .social_information__item:hover {
+    cursor: pointer;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    padding: 5px;
+    background-color: #2b7bff;
+  }
+  
+  .social_information__item:hover .social_information__count {
+    color: #fff;
+  }
+  
+  .social_information__item:hover .social_information__subject {
+    color: #fff;
+  }
+  
+  .social_information__item:last-child {
+    margin-right: 0;
+  }
+  
+  .social_information__count {
+    text-align: center;
+    font-weight: 400;
+    color: #2b7bff;
+    font-size: 22px;
+  }
+  
+  .social_information__subject {
+    color: #707070;
+    font-size: 18px;
+    font-weight: 400;
+  }

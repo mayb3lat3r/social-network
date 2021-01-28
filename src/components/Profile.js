@@ -4,10 +4,11 @@ import ProfileInfo from "./ProfileInfo";
 import ProfileManageSocialInformation from "./ProfileManageSocialInformation";
 import CreatePost from "./CreatePost";
 import Post from "./Post";
+import s from './Profile.module.css';
 
 const Profile = () => {
   return (
-    <main className="profile">
+    <main className={s.profile}>
       <ProfileHat />
       <ProfileInfo />
       <ProfileManageSocialInformation />

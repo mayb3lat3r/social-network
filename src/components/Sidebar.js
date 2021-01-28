@@ -1,24 +1,25 @@
 import React from "react";
+import s from "./Sidebar.module.css";
 
 const Sidebar = () => {
   return (
-    <ul className="sidebar">
-      <li className="sidebar__item">
+    <ul className={s.sidebar}>
+      <li>
         <a href="#">Profile</a>
       </li>
-      <li className="sidebar__item">
+      <li>
         <a href="#">News</a>
       </li>
-      <li className="sidebar__item">
+      <li>
         <a href="#">Messages</a>
       </li>
-      <li className="sidebar__item">
+      <li>
         <a href="#">Friends</a>
       </li>
-      <li className="sidebar__item">
+      <li>
         <a href="#">Music</a>
       </li>
-      <li className="sidebar__item">
+      <li>
         <a href="#">Settings</a>
       </li>
     </ul>

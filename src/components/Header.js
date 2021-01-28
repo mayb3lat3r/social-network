@@ -1,42 +1,45 @@
 import React from "react";
+import s from './Header.module.css';
+import basic from '../App.module.css';
 
 const Header = () => {
   return (
-    <header className="header">
-      <div className="logo">
+    <header className={s.header}>
+      <div className={s.logo}>
         <a href="#">
           <img src="img/logotype.png" alt="logo" />
+          <span className={s.logo_text}>Company</span>
         </a>
       </div>
 
-      <div className="container">
-        <nav className="nav">
-          <input href="#" className="nav__search" placeholder="Search"></input>
-          <a href="#" className="nav__notifications">
+      <div className={basic.container}>
+        <nav className={s.nav}>
+          <input href="#" className={s.nav__search} placeholder="Search"></input>
+          <a href="#" className={s.nav__item}>
             <img
               src="img/notification.svg"
               alt="notifications"
-              className="icon-header"
+              className={s.icon}
             />
           </a>
-          <a href="#" className="nav__music-player">
+          <a href="#" className={s.nav__item}>
             <img
               src="img/music-player-1.svg"
               alt="music-player"
-              className="icon-header"
+              className={s.icon}
             />
           </a>
         </nav>
       </div>
 
-      <div className="user">
-        <div className="user__avatar">
-          <img src="img/avatar.png" alt="user avatar" />
+      <div className={s.user}>
+        <div className={s.user__avatar}>
+          <img src="img/avatar.png" alt="User" />
         </div>
-        <div className="user__username">Maxim</div>
-        <div className="user__more">
+        <div className={s.user__username}>Maxim</div>
+        <div className={s.user__more}>
           <a href="#">
-            <img src="img/user-more.svg" alt="user more" />
+            <img src="img/user-more.svg" alt="More" />
           </a>
         </div>
       </div>

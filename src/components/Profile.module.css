@@ -1,0 +1,9 @@
+.profile {
+  position: relative;
+  top: 86px;
+  overflow: hidden;
+  max-width: 877px;
+  width: 877px;
+  height: 100%;
+  margin-left: 260px;
+}

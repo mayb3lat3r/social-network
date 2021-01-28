@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar"
-import Profile from "./components/Profile";n
-import "./App.css";
+import Profile from "./components/Profile";
+import s from "./App.module.css";
 
 const App = () => {
   return (
     <body>
       <Header />
-      <div className="container container__main">
+      <div className={s.container}>
         <Sidebar />
         <Profile />
       </div>  

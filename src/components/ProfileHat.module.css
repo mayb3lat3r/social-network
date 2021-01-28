@@ -1,0 +1,75 @@
+.hat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 877px;
+  height: 206px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.21);
+  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.21);
+  background-color: #000;
+  overflow: hidden;
+}
+
+.hat:hover .profile_background {
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  opacity: 0.5;
+}
+
+.hat:hover .settings {
+  display: block;
+}
+
+.settings {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.settings a {
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.settings a:hover {
+  color: #006fff;
+}
+
+.settings a:hover img {
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  border: 5px solid #006fff;
+}
+
+.settings a:active {
+  color: #000;
+}
+
+.link {
+  font-size: 20px;
+  padding: 15px 0 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.link img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.link p {
+  margin-left: 10px;
+}

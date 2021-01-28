@@ -1,0 +1,116 @@
+.profile_info {
+    margin: 20px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 220px;
+    min-width: 220px;
+    height: 220px;
+    min-height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.21);
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.21);
+    border: 1px solid #0036ff;
+    background-color: #ffffff;
+    -webkit-transition-duration: 100ms;
+    -o-transition-duration: 100ms;
+    transition-duration: 100ms;
+}
+
+.avatar img {
+    width: 100%;
+}
+
+.avatar:hover {
+    border: 3px solid #0036ff;
+}
+
+.description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 614px;
+    -webkit-box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.21);
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.21);
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 10px 14px;
+}
+
+.username {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+}
+
+.user_information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 400;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.params {
+    margin-right: 25px;
+    color: #707070;
+}
+
+.params_answers a {
+    color: #006fff;
+}
+
+.params-answers a:hover {
+    -webkit-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    transition-duration: 200ms;
+    color: #0048a7;
+}
+
+.more {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    color: #4b4b4b;
+    font-size: 14px;
+    font-weight: 400;
+    width: 195px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #e2e2e2;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.more:hover {
+    color: #fff;
+    background-color: #006fff;
+}
+
+.more:active {
+    color: #fff;
+    background-color: #2b2b2b;
+}
