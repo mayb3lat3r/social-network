@@ -1,6 +1,6 @@
 import React from "react";
 import s from './Header.module.css';
-import basic from '../App.module.css';
+import basic from '../../App.module.css';
 
 const Header = () => {
   return (
@@ -11,6 +11,8 @@ const Header = () => {
           <span className={s.logo_text}>Company</span>
         </a>
       </div>
+
+      
 
       <div className={basic.container}>
         <nav className={s.nav}>
@@ -24,7 +26,7 @@ const Header = () => {
           </a>
           <a href="#" className={s.nav__item}>
             <img
-              src="img/music-player-1.svg"
+              src="./img/music-player-1.svg"
               alt="music-player"
               className={s.icon}
             />

@@ -9,7 +9,6 @@
 }
 
 .avatar {
-
   height: 46px;
   max-width: 46px;
   min-width: 46px;
@@ -25,6 +24,7 @@
 
 .case {
   margin-left: 25px;
+  width: 100%;
 }
 
 .case span {
@@ -40,7 +40,6 @@
   color: #393939;
   font-size: 22px;
   font-weight: 700;
-  letter-spacing: 0.55px;
 }
 
 .date {
@@ -53,7 +52,6 @@
 .content {
   margin-top: 10px;
   text-align: justify;
-  /*color: #707070;*/
   color: black;
   font-size: 18px;
   font-weight: 400;
@@ -87,7 +85,7 @@
   font-weight: 400;
 }
 
-.likes_count {
+.items_count {
   font-size: 18px;
   font-weight: 400;
   color: #2b7bff;
@@ -113,7 +111,7 @@
   max-height: 200px;
   border-radius: 10px;
   background-color: #ebebeb;
-  color: #707070;
+  /*color: #707070;*/
   font-weight: 400;
   font-size: 14px;
   padding: 10px 15px;
@@ -124,4 +122,18 @@
 
 .input:focus {
   background-color: whitesmoke;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more {
+  width: 25px;
+}
+
+.more:active {
+  position: relative;
+  top: 1px;
 }

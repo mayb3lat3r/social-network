@@ -51,7 +51,7 @@
 }
 
 .settings a:active {
-  color: #000;
+  color: rgb(0, 14, 92);
 }
 
 .link {
@@ -68,6 +68,7 @@
 .link img {
   width: 50px;
   border-radius: 50%;
+  padding: 5px;
 }
 
 .link p {

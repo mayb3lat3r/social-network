@@ -1,8 +1,9 @@
-import React from "react";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar"
-import Profile from "./components/Profile";
-import s from "./App.module.css";
+import React from "react"
+import Header from "./components/Header/Header"
+import Sidebar from "./components/Sidebar/Sidebar"
+import Profile from "./components/Profile/Profile"
+import Dialogs from "./components/Dialogs/Dialogs"
+import s from "./App.module.css"
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
       <Header />
       <div className={s.container}>
         <Sidebar />
-        <Profile />
+        {/*<Profile />*/}
+        <Dialogs />
       </div>  
     </body>
   );

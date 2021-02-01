@@ -1,9 +1,9 @@
 import React from "react";
 import s from "./Post.module.css";
-import basic from "../App.module.css";
-import cp from "./CreatePost.module.css";
+import basic from "../../../App.module.css";
+import cp from "../CreatePost/CreatePost.module.css";
 
-const Post = () => {
+const Post = (props) => {
   return (
     <div className={s.post}>
       <div className={s.avatar}>
@@ -13,19 +13,15 @@ const Post = () => {
       </div>
 
       <div className={s.case}>
-        <span>
+        <div className={s.info}>
           <h2 className={s.username}>Maxim Zvenigorodsky</h2>
           <a href="#">
-            <img src="/img/more.svg" alt="" className="post__more" />
+            <img src="./img/more.svg" alt="" className={s.more} />
           </a>
-        </span>
-        <h4 className={s.date}>29.08.2020</h4>
+        </div>
+        <h4 className={s.date}>{props.date}</h4>
         <div className={s.content}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-          suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-          lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit,cus vel facilisis.
+          {props.text}
         </div>
         <div className={s.reactions}>
           <div className={s.item}>
@@ -36,7 +32,7 @@ const Post = () => {
                 className={basic.icon_middle}
               />
             </a>
-            <div className={s.likes_count}>0</div>
+            <div className={s.items_count}>{props.likes}</div>
             <p>likes</p>
           </div>
 
@@ -48,7 +44,7 @@ const Post = () => {
                 className={basic.icon_middle}
               />
             </a>
-            <div className={s.likes_count}>0</div>
+            <div className={s.items_count}>{props.comments}</div>
             <p>comments</p>
           </div>
         </div>

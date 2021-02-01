@@ -23,8 +23,9 @@
   width: 28px;
 }
 
-.icon:hover {
-  fill: red;
+.icon:active {
+  position: relative;
+  top: 1px;
 }
 
 .logo {
@@ -51,12 +52,12 @@
 
 }
 
-.logo:hover {
+.logo:active {
   position: relative;
   top: 1px;
 }
 
-.logo:hover img {
+.logo:active img {
   border-radius: 50%;
   -webkit-box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.527);
   box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.527);
@@ -76,7 +77,7 @@
   width: 195px;
   height: 30px;
   border-radius: 10px;
-  background: #e2e2e2 url("./../imgsrc/search.svg") no-repeat 95% 50%;
+  background: #e2e2e2 url("./img/search.svg") no-repeat 95% 50%;
   background-size: 20px;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -84,7 +85,7 @@
 }
 
 .nav input:focus {
-  background: #ebebeb url("./../imgsrc/search.svg") no-repeat 95% 50%;
+  background: #ebebeb url("./img/search.svg") no-repeat 95% 50%;
   background-size: 20px;
 }
 
