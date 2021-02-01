@@ -5,13 +5,13 @@ const Sidebar = () => {
   return (
     <ul className={s.sidebar}>
       <li>
-        <a href="#">Profile</a>
+        <a href="/Profile">Profile</a>
       </li>
       <li>
         <a href="#">News</a>
       </li>
       <li>
-        <a href="#">Messages</a>
+        <a href="/Dialogs">Messages</a>
       </li>
       <li>
         <a href="#">Friends</a>
