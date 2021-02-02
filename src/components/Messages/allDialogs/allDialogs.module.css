@@ -2,5 +2,9 @@
     width: 250px;
     background-color: #fff;
     overflow: hidden;
+
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #e9e9e9;
 }
 

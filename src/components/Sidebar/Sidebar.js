@@ -6,22 +6,22 @@ const Sidebar = () => {
     return (
         <ul className={s.sidebar}>
             <li>
-                <NavLink to="/Profile" activeClassName={s.activeLink}>Profile</NavLink>
+                <NavLink to="/profile" activeClassName={s.activeLink}>Profile</NavLink>
             </li>
             <li>
-                <NavLink to="/News" activeClassName={s.activeLink}>News</NavLink>
+                <NavLink to="/news" activeClassName={s.activeLink}>News</NavLink>
             </li>
             <li>
-                <NavLink to="/Messages" activeClassName={s.activeLink}>Messages</NavLink>
+                <NavLink to="/messages" activeClassName={s.activeLink}>Messages</NavLink>
             </li>
             <li>
-                <NavLink to="/Friends" activeClassName={s.activeLink}>Friends</NavLink>
+                <NavLink to="/friends" activeClassName={s.activeLink}>Friends</NavLink>
             </li>
             <li>
-                <NavLink to="/Music" activeClassName={s.activeLink}>Music</NavLink>
+                <NavLink to="/music" activeClassName={s.activeLink}>Music</NavLink>
             </li>
             <li>
-                <NavLink to="/Settings" activeClassName={s.activeLink}>Settings</NavLink>
+                <NavLink to="/settings" activeClassName={s.activeLink}>Settings</NavLink>
             </li>
         </ul>
     );
