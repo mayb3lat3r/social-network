@@ -52,7 +52,7 @@
     color: #000000;
     font-size: 30px;
     font-weight: 700;
-    letter-spacing: 0.75px;
+    /*letter-spacing: 0.75px;*/
 }
 
 .user_information {
@@ -70,6 +70,7 @@
 .params {
     margin-right: 25px;
     color: #707070;
+
 }
 
 .params_answers a {
@@ -84,7 +85,7 @@
 }
 
 .more {
-    display: -webkit-inline-box;
+    /*display: -webkit-inline-box;*/
     display: -ms-inline-flexbox;
     display: inline-flex;
     color: #4b4b4b;

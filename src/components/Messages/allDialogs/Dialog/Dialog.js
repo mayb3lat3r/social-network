@@ -5,14 +5,14 @@ const Dialog = (props) => {
     return (
         <div className={s.main}>
             <div className={s.avatar}>
-                <img src="./avatars/ava.jpg" alt="avatar"/>
+                <img src="./avatars/ava.jpg" alt=""/>
             </div>
             <div className={s.info}>
                 <div className={s.name}>
-                    {props.name};
+                    {props.name}
                 </div>
                 <div className={s.lastMessage}>
-                    {props.lastMessage};
+                    {props.lastMessage}
                 </div>
             </div>
         </div>
