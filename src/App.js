@@ -13,8 +13,8 @@ const App = (props) => {
             <Header/>
             <div className={s.container}>
                 <Sidebar/>
-                <Route path="/Profile" component={Profile}/>
-                <Route path="/Messages" component={Messages}/>
+                <Route path="/Profile" render={() => <Profile PostsData={props.PostsData}/>}/>
+                <Route path="/Messages" render={() => <Messages MessagesData={props.MessagesData} DialogsData={props.DialogsData}/>}/>
             </div>
             </body>
         </BrowserRouter>

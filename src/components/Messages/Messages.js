@@ -6,8 +6,8 @@ import s from "./Messages.module.css";
 const Messages = (props) => {
     return (
         <div className={s.messages}>
-            <AllDialogs/>
-            <CurrentDialog name="Maxim Zvenigorodsky" status="online"/>
+            <AllDialogs DialogsData={props.DialogsData}/>
+            <CurrentDialog name="Maxim Zvenigorodsky" status="online" MessagesData={props.MessagesData}/>
         </div>
     );
 };

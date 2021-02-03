@@ -29,7 +29,6 @@
 }
 
 .logo {
-  height: 55px;
   padding-left: 5px;
   -webkit-transition-duration: 200ms;
   -o-transition-duration: 200ms;
@@ -43,13 +42,12 @@
 }
 
 .logo_text {
-  font-family: Arial;
   font-size: 20px;
   color: #000000;
-  width: 100px;
   max-width: 100px;
   padding-left: 10px;
-
+  line-height: 15px;
+  letter-spacing: 1px;
 }
 
 .logo:active {
@@ -61,6 +59,10 @@
   border-radius: 50%;
   -webkit-box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.527);
   box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.527);
+}
+
+.logo img {
+  width: 40px;
 }
 
 .nav {

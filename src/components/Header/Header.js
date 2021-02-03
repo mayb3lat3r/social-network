@@ -7,8 +7,8 @@ const Header = () => {
         <header className={s.header}>
             <div className={s.logo}>
                 <a href="#">
-                    <img src="img/logotype.png" alt="logo"/>
-                    <span className={s.logo_text}>Company</span>
+                    <img src="img/logotype.svg" alt="logo"/>
+                    <span className={s.logo_text}>Social Network</span>
                 </a>
             </div>
 

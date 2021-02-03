@@ -53,35 +53,10 @@
     color: #2b7bff;
 }
 
-
 .content {
     flex-shrink: 1;
     background-color: white;
     height: 800px;
-}
-
-.msgblock {
-    display: flex;
-    align-items: center;
-}
-
-.msg{
-    padding: 10px;
-    font-size: medium;
-    display: flex;
-    flex-direction: column;
-}
-
-.msgavatar{
-    width: 35px;
-    height: 35px;
-    background-color: #fff;
-    border-radius: 50%;
-}
-
-.msg__name{
-    font-weight: bold;
-    color: #656565;
 }
 
 .item {
