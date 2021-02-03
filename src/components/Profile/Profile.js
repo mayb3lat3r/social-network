@@ -3,7 +3,7 @@ import ProfileHat from "./ProfileHat/ProfileHat";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import ProfileManageSocialInformation from "./ProfileManageSocialInformation/ProfileManageSocialInformation";
 import CreatePost from "./CreatePost/CreatePost";
-import Posts from "./Posts/Posts"
+import Posts from "./Posts/ProfilePosts"
 import s from "./Profile.module.css";
 
 const Profile = () => {
