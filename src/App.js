@@ -8,16 +8,19 @@ import s from "./App.module.css";
 
 const App = (props) => {
     return (
+        <body>
         <BrowserRouter>
-            <body>
             <Header/>
             <div className={s.container}>
                 <Sidebar/>
-                <Route path="/Profile" render={() => <Profile PostsData={props.PostsData}/>}/>
-                <Route path="/Messages" render={() => <Messages MessagesData={props.MessagesData} DialogsData={props.DialogsData}/>}/>
+                <Route path="/profile" render={() => <Profile
+                    ProfilePage={props.state.ProfilePage}
+                    addPost={props.addPost}
+                    updateNewPostText={props.updateNewPostText}/>}/>
+                <Route path="/messages" render={() => <Messages MessagesPage={props.state.MessagesPage}/>}/>
             </div>
-            </body>
         </BrowserRouter>
+        </body>
     );
 };
 

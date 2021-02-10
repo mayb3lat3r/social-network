@@ -75,9 +75,10 @@
 
 .params_answers a {
     color: #006fff;
+
 }
 
-.params-answers a:hover {
+.params_answers a:hover {
     -webkit-transition-duration: 200ms;
     -o-transition-duration: 200ms;
     transition-duration: 200ms;

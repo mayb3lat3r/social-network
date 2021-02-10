@@ -6,9 +6,9 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 19px;
-  }
-  
-  .manage {
+}
+
+.manage {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -26,13 +26,13 @@
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-  }
-  
-  .manage:hover {
+}
+
+.manage:hover {
     background-color: #0048a7;
-  }
-  
-  .social_information {
+}
+
+.social_information {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -49,43 +49,44 @@
     border-radius: 10px;
     background-color: #ffffff;
     overflow: hidden;
-  }
-  
-  .social_information__item {
+}
+
+.social_information__item {
     margin-right: 32px;
     border-radius: 10px;
-  }
-  
-  .social_information__item:hover {
+}
+
+.social_information__item:hover {
     cursor: pointer;
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
     padding: 5px;
     background-color: #2b7bff;
-  }
-  
-  .social_information__item:hover .social_information__count {
+
+}
+
+.social_information__item:hover .social_information__count {
     color: #fff;
-  }
-  
-  .social_information__item:hover .social_information__subject {
+}
+
+.social_information__item:hover .social_information__subject {
     color: #fff;
-  }
-  
-  .social_information__item:last-child {
+}
+
+.social_information__item:last-child {
     margin-right: 0;
-  }
-  
-  .social_information__count {
+}
+
+.social_information__count {
     text-align: center;
     font-weight: 400;
     color: #2b7bff;
     font-size: 22px;
-  }
-  
-  .social_information__subject {
+}
+
+.social_information__subject {
     color: #707070;
     font-size: 18px;
     font-weight: 400;
-  }
+}

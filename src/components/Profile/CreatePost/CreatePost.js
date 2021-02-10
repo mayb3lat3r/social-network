@@ -1,8 +1,21 @@
 import React from "react";
 import s from './CreatePost.module.css';
-import basic from '../../../App.module.css';
 
-const CreatePost = () => {
+
+const CreatePost = (props) => {
+
+    let newPostElement = React.createRef();
+
+    let addPost = () => {
+        props.addPost();
+        props.updateNewPostText('');
+    }
+
+    let onPostChange = () => {
+        let text = newPostElement.current.value;
+        props.updateNewPostText(text);
+    }
+
     return (
         <div className={s.create_post}>
             <div className={s.avatar}>
@@ -10,21 +23,27 @@ const CreatePost = () => {
                     <img src="/img/avatar.png" alt="avatar"/>
                 </a>
             </div>
+
             <textarea
-                name=""
                 className={s.input}
-                placeholder="Create a new post..."
+                value={props.NewPostText}
+                ref={newPostElement}
+                onChange={onPostChange}
             />
-            <a href="#">
-                <img
-                    src="img/attachment.svg"
-                    alt="attachment"
-                    className={s.item}
-                />
-            </a>
-            <a href="#">
-                <img src="img/submit.svg" alt="submit" className={s.item}/>
-            </a>
+
+            <img
+                src="img/attachment.svg"
+                alt="attachment"
+                className={s.item}
+            />
+
+            <img
+                onClick={addPost}
+                src="img/submit.svg"
+                alt="submit"
+                className={s.item}
+            />
+
         </div>
     );
 };

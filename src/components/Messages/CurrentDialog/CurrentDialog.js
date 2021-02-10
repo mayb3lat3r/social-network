@@ -5,6 +5,13 @@ import s from "./currentDialog.module.css"
 
 const CurrentDialog = (props) => {
 
+    let textMessage = React.createRef();
+
+    let sendMessage = () => {
+        let text = textMessage.current.value;
+        alert(text);
+    }
+
     let Messages = props.MessagesData.map(elem => <Message id={elem.id} name={elem.name} msg={elem.message}/>);
 
     return (
@@ -26,9 +33,8 @@ const CurrentDialog = (props) => {
 
             <div className={s.message}>
                 <a href="#"><img src="/img/attachment.svg" alt="attachment" className={s.item}/></a>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <a href="#"><img src="/img/submit.svg" alt="" placeholder="Write a message here"
-                                 className={s.item}/></a>
+                <textarea name="" id="" cols="30" rows="10" ref={textMessage}></textarea>
+                <a href="#"><img onClick={sendMessage} src="/img/submit.svg" alt="" className={s.item}/></a>
             </div>
         </div>
     );

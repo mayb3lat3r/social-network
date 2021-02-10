@@ -13,8 +13,8 @@ const Profile = (props) => {
             <ProfileHat/>
             <ProfileInfo/>
             <ProfileManageSocialInformation/>
-            <CreatePost/>
-            <ProfilePosts PostsData={props.PostsData}/>
+            <CreatePost addPost={props.addPost} NewPostText={props.ProfilePage.NewPostText} updateNewPostText={props.updateNewPostText}/>
+            <ProfilePosts PostsData={props.ProfilePage.PostsData}/>
         </main>
     );
 };
